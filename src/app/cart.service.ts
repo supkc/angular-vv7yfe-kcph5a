@@ -1,24 +1,24 @@
-// import { Injectable } from '@angular/core';
-// import { products } from './products';
+import { Injectable } from '@angular/core';
+import { products } from './products';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class CartService {
-//   items: any;
+@Injectable({
+  providedIn: 'root'
+})
+export class CartService {
+  items: any;
 
-//   constructor() {}
+  constructor() {}
 
-//   addToCart(product: any) {
-//     this.items.push(product);
-//   }
+  addToCart(product: any) {
+    this.items.push(product);
+  }
 
-//   getItems() {
-//     return this.items;
-//   }
+  getItems() {
+    return this.items;
+  }
 
-//   clearCart() {
-//     this.items = [];
-//     return this.items;
-//   }
-// }
+  clearCart() {
+    this.items = [];
+    return this.items;
+  }
+}
